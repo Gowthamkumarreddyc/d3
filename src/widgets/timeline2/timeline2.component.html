@@ -1,0 +1,177 @@
+<div class="timeline-container" [id]="chartId">
+    <table width="100%" class="table-sequence" [style]="calWidthStyle">
+        <tbody>
+            <tr height="30"></tr>
+
+            <tr *ngFor="let row of yAxis; let i=index;" data-events="1" data-index="3">
+                <td *ngFor="let col of xAxis; let j=index;" data-day="2023-03-14" data-index="0">
+                    <div class="legend" *ngIf="j == 0">{{ row }}</div>
+                    <ng-container *ngIf="getSeries(row, col) as series">
+                        
+                        <div *ngIf="series['xAxis'] === col" [class]="'events badge width-'+series.step" title="Title Description.........">
+                            <div class="d-flex justify-content-between">
+                                <div class="bar">
+                                    <!-- Need to make dynamic  series.group -->
+                                    <span class="event-success"></span>
+                                    <!-- <span class="event-progress"></span>
+                                    <span class="event-upcoming"></span> -->
+                                </div>
+                                <div [class]="'events-mark '+series.type"></div>
+                            </div>
+                        </div>
+                        
+                    </ng-container>
+                </td>
+            </tr>
+
+            <tr data-events="1" data-index="3">
+                <td data-day="2023-03-14" data-index="0">
+                    <div class="legend">D123456</div>
+                </td>
+                <td data-day="2023-03-15" data-index="1"></td>
+                <td data-day="2023-03-16" data-index="2"></td>
+                <td data-day="2023-03-17" data-index="3"></td>
+                <td data-day="2023-03-18" data-index="4"></td>
+                <td data-day="2023-03-19" data-index="5"></td>
+                <td data-day="2023-03-20" data-index="6">
+                    <div class="events badge width-1" title="Title Description.........">
+                        <span class="event-success"></span>
+                        <span class="event-progress"></span>
+                        <span class="event-upcoming"></span>
+                    </div>
+                </td>
+            </tr>
+            <tr data-events="1" data-index="4">
+                <td data-day="2023-03-14" data-index="0">
+                    <div class="legend">E123456</div>
+                </td>
+                <td data-day="2023-03-15" data-index="1"></td>
+                <td data-day="2023-03-16" data-index="2"></td>
+                <td data-day="2023-03-17" data-index="3"></td>
+                <td data-day="2023-03-18" data-index="4"></td>
+                <td data-day="2023-03-19" data-index="5">
+                    <div class="events badge width-1" title="Title Description.........">
+                        <span class="event-success"></span>
+                        <span class="event-progress"></span>
+                        <span class="event-upcoming"></span>
+                    </div>
+                </td>
+                <td data-day="2023-03-20" data-index="6"></td>
+            </tr>
+            <tr data-events="1" data-index="5">
+                <td data-day="2023-03-14" data-index="0">
+                    <div class="legend">F123456</div>
+                </td>
+                <td data-day="2023-03-15" data-index="1"></td>
+                <td data-day="2023-03-16" data-index="2"></td>
+                <td data-day="2023-03-17" data-index="3"></td>
+                <td data-day="2023-03-18" data-index="4">
+                    <div class="events badge width-1" title="Title Description.........">
+                        <span class="event-success"></span>
+                        <span class="event-progress"></span>
+                        <span class="event-upcoming"></span>
+                    </div>
+                </td>
+                <td data-day="2023-03-19" data-index="5"></td>
+                <td data-day="2023-03-20" data-index="6"></td>
+            </tr>
+            <tr data-events="1" data-index="6">
+                <td data-day="2023-03-14" data-index="0">
+                    <div class="legend">G123456</div>
+                </td>
+                <td data-day="2023-03-15" data-index="1"></td>
+                <td data-day="2023-03-16" data-index="2"></td>
+                <td data-day="2023-03-17" data-index="3">
+                    <div class="events badge width-1" title="Title Description.........">
+                        <span class="event-success"></span>
+                        <span class="event-progress"></span>
+                        <span class="event-upcoming"></span>
+                    </div>
+                </td>
+                <td data-day="2023-03-18" data-index="4"></td>
+                <td data-day="2023-03-19" data-index="5"></td>
+                <td data-day="2023-03-20" data-index="6"></td>
+            </tr>
+            <tr data-events="1" data-index="7">
+                <td data-day="2023-03-14" data-index="0">
+                    <div class="legend">H123456</div>
+                </td>
+                <td data-day="2023-03-15" data-index="1"></td>
+                <td data-day="2023-03-16" data-index="2">
+                    <div class="events badge width-1" title="Title Description.........">
+                        <span class="event-success"></span>
+                        <span class="event-progress"></span>
+                        <span class="event-upcoming"></span>
+                    </div>
+                </td>
+                <td data-day="2023-03-17" data-index="3"></td>
+                <td data-day="2023-03-18" data-index="4"></td>
+                <td data-day="2023-03-19" data-index="5"></td>
+                <td data-day="2023-03-20" data-index="6"></td>
+            </tr>
+            <tr data-events="1" data-index="8">
+                <td data-day="2023-03-14" data-index="0">
+                    <div class="legend">I123456</div>
+                </td>
+                <td data-day="2023-03-15" data-index="1">
+                    <div class="events badge width-2" title="Title Description.........">
+                        <div class="d-flex justify-content-between">
+                            <div class="bar">
+                                <span class="event-success"></span>
+                                <span class="event-progress"></span>
+                            </div>
+                            <div class="events-mark"></div>
+                        </div>
+                    </div>
+                </td>
+                <td data-day="2023-03-16" data-index="2"></td>
+                <td data-day="2023-03-17" data-index="3"></td>
+                <td data-day="2023-03-18" data-index="4"></td>
+                <td data-day="2023-03-19" data-index="5"></td>
+                <td data-day="2023-03-20" data-index="6"></td>
+            </tr>
+            <tr data-events="1" data-index="9">
+                <td data-day="2023-03-14" data-index="0">
+                    <div class="legend">J123456</div>
+                    <div class="events badge width-1" title="Title Description.........">
+                        <span class="event-success"></span>
+                        <span class="event-progress"></span>
+                        <span class="event-upcoming"></span>
+                    </div>
+                </td>
+                <td data-day="2023-03-15" data-index="1"></td>
+                <td data-day="2023-03-16" data-index="2"></td>
+                <td data-day="2023-03-17" data-index="3"></td>
+                <td data-day="2023-03-18" data-index="4"></td>
+                <td data-day="2023-03-19" data-index="5"></td>
+                <td data-day="2023-03-20" data-index="6"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td data-index="0">
+                    <div class="x-axis">2013</div>
+                </td>
+                <td data-index="1">
+                    <div class="x-axis">2014</div>
+                </td>
+                <td data-index="2">
+                    <div class="x-axis">2015</div>
+                </td>
+                <td data-index="3">
+                    <div class="x-axis">2016</div>
+                </td>
+                <td data-index="4">
+                    <div class="x-axis">2017</div>
+                </td>
+                <td data-index="5">
+                    <div class="x-axis">2018</div>
+                </td>
+                <td data-index="6">
+                    <div class="x-axis">2019</div>
+                </td>
+            </tr>
+            <tr height="30"></tr>
+        </tfoot>
+    </table>
+</div>

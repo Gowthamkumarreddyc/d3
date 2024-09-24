@@ -1,0 +1,18 @@
+::ng-deep {
+    .y-axis-scale path.domain {
+        stroke: #fff;
+    }
+
+    .y-axis-scale .tick line {
+        stroke: #fff;
+    }
+
+    .x-axis-scale .tick line {
+        stroke: #fff;
+    }
+}
+
+.chart {
+    width: 350px;
+    height: 300px;
+}

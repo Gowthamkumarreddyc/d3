@@ -1,0 +1,71 @@
+<style>
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+</style>
+<header>
+  <ul class="nav navbar-navs">
+    <li><a [routerLink]="['overview']">All</a></li>
+    <li><a [routerLink]="['bar']">bar</a></li>
+    <li><a [routerLink]="['pie']">pie</a></li>
+    <li><a [routerLink]="['doughnut']">doughnut</a></li>
+    <li><a [routerLink]="['half-doughnut']">Half Doughnut</a></li>
+    <li><a [routerLink]="['guage']">guage</a></li>
+    <li><a [routerLink]="['line']">line</a></li>
+    <li><a [routerLink]="['radar']">radar</a></li>
+    <li><a [routerLink]="['timeline']">timeline</a></li>
+    <li><a [routerLink]="['violin']">violin</a></li>
+    <li><a [routerLink]="['stacked-column']">Stacked Column</a></li>
+    <li><a [routerLink]="['area']">Area</a></li>
+    <li><a [routerLink]="['scatter']">Pressure curve</a></li>
+    <li><a [routerLink]="['timeline2']">Timeline Table</a></li>
+  </ul>
+</header>
+<router-outlet></router-outlet>
+
+<!-- Version 2 Components-->
+<!-- <app-bar2 chartName="barA" [data]="barChartData"></app-bar2>
+<app-bar2 chartName="barB" [data]="barChartData2"></app-bar2> 
+<app-pie2 chartName="piea" [data]="chartData_2D_1"></app-pie2>
+<app-pie2 chartName="pieb" [data]="chartData_2D_2"></app-pie2>
+<app-scatter2 chartName="scatterChart" [data]="scatterData"></app-scatter2>
+-->
+
+<!-- 
+chartData_2D_1: ChartData = {
+  yrange: 200000,
+  lineData: [
+    { label: 'Vue', value: 166443 },
+    { label: 'React', value: 150793 },
+    { label: 'Angular', value: 62342 },
+    { label: 'Backbone', value: 27647 },
+    { label: 'Ember', value: 21471 },
+  ],
+};
+
+chartData_2D_2: ChartData = {
+  yrange: 1,
+  lineData: [
+    { label: 'CSharp', value: 0.33 },
+    { label: 'JavaScript', value: 0.67 },
+    { label: 'TypeScript', value: 0.4 },
+    { label: 'Java', value: 0.25 },
+  ],
+};
+
+scatterData: ScatterChartData = {
+  lineData: [
+    { label: 'Vue', xValue: 2014, yValue: 166443 },
+    { label: 'React', xValue: 2013, yValue: 150793 },
+    { label: 'Angular', xValue: 2016, yValue: 62342 },
+    { label: 'Backbone', xValue: 2010, yValue: 27647 },
+    { label: 'Ember', xValue: 2011, yValue: 21471 },
+  ],
+}; -->

@@ -1,0 +1,22 @@
+::ng-deep {
+    g.axis.y {
+        path {
+            stroke: none;
+        }
+
+        .tick line {
+            stroke: none;
+        }
+    }
+
+    g.axis.x {
+        .tick line {
+            stroke: none;
+        }
+    }
+}
+
+.chart {
+    width: 400px;
+    height: 300px;
+}

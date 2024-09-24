@@ -1,0 +1,10 @@
+::ng-deep {
+    g.axis.y {
+        path {
+            stroke: none;
+        }
+        .tick line {
+            stroke: none;
+        }
+    }
+}

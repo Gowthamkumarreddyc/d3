@@ -1,0 +1,11 @@
+::ng-deep {
+  .center-text {
+    stroke: white;
+  }
+  .center-circle {
+    fill: red;
+    stroke: black;
+    stroke-width: 3px;
+    transform: translate(30,40);
+  }
+}

@@ -1,0 +1,23 @@
+::ng-deep {
+    path.domain {
+        stroke: #ccc;
+    }
+
+    g.x-axis-grid path {
+        stroke: #cccccc44;
+    }
+
+    .y-axis {
+        stroke: none !important;
+        stroke-opacity: 0;
+    }
+
+    .myViolin path {
+        fill: linear-gradient(90deg, rgba(2, 167, 131, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 18%, rgba(2, 167, 131, 1) 30%) !important;
+    }
+}
+
+.chart {
+    width: 400px;
+    height: 400px;
+}

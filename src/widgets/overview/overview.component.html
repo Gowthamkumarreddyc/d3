@@ -1,0 +1,129 @@
+<div class="container-fluid p-2">
+
+  <!-- Row -->
+  <div class="row mb-4">
+    <div class="col-md-4">
+      <div class="graph">
+        <wissen-bar-chart [barData]="barChartData"></wissen-bar-chart>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="graph">
+        <wissen-radar-chart scaleType="y" [radarData]="radarChartData"></wissen-radar-chart>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="graph">
+        <wissen-radar-chart [radarData]="radarChartData"></wissen-radar-chart>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Row -->
+  <div class="row mb-4">
+    <div class="col-md-4">
+      <div class="graph">
+        <wissen-area-density-chart [areaDensityData]="areaDensityChartData"></wissen-area-density-chart>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="graph">
+        <wissen-area-density-chart [areaDensityData]="areaDensityChartData"></wissen-area-density-chart>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="graph">
+        <wissen-bar3-chart [diffColBar]="differentColorBarData"></wissen-bar3-chart>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Row -->
+  <div class="row mb-4">
+    <div class="col-md-4">
+      <div class="graph">
+        <wissen-vertical-stacked-column-chart [verticalStackedColumn]="stackedVerticalColumn"
+          [subGroup]="verticalStackedSubgroup"></wissen-vertical-stacked-column-chart>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="graph">
+        <wissen-vertical-stacked-column-chart [verticalStackedColumn]="stackedVerticalColumn"
+          [subGroup]="verticalStackedSubgroup"></wissen-vertical-stacked-column-chart>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="graph">
+        <wissen-horizontal-stacked-column-chart [horizontalStackedChart]="horizontalStackedData"
+          [horizontalStackedColumn]="horizontalStackedColumn"
+          [horizontalStackedGroup]="horizontalStackedGroup"></wissen-horizontal-stacked-column-chart>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row -->
+  <div class="row">
+    <div class="col-md-8">
+      <div class="graph">
+        <timeline-table></timeline-table>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="graph">
+        <wissen-violin-chart [violinChart]="violinChartData" [violinGroups]="violinGroup"></wissen-violin-chart>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Row -->
+  <div class="row mb-4">
+    <div class="col-md-4">
+      <div class="graph">
+        <wissen-doughnut-chart [doughnutChart]="doughnutChartData"></wissen-doughnut-chart>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="graph">
+        <wissen-halfdoughnut-chart [halfdoughnutChart]="halfdoughnutData"></wissen-halfdoughnut-chart>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="graph">
+        <wissen-gaugemeter-chart [gaugeChart]="gaugeChartData"></wissen-gaugemeter-chart>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row -->
+  <div class="row mb-4">
+
+    <div class="col-md-4">
+
+      <div class="graph">
+        <div class="row">
+          <div class="col">
+            <wissen-gaugemeter-chart [gaugeChart]="gaugeChartData"></wissen-gaugemeter-chart>
+          </div>
+          <div class="col">
+            <wissen-gaugemeter-chart [gaugeChart]="gaugeChartData"></wissen-gaugemeter-chart>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            Some Data
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--  -->
+</div>
